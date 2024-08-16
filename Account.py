@@ -15,3 +15,13 @@ class Account:
     def set_interest(self, interest):
         """Sets the interest gained for the the account"""
         self.interest = interest
+
+# The method gets the interest gained for the account.
+    def get_interest(self):
+        """Gets the interest gained for the the account"""
+        return self.interest 
+
+# The method gets the balance for the account.
+    def get_balance(self):
+        """Gets the balance for the the account"""
+        return self.balance

@@ -15,11 +15,12 @@ def main():
     savings_maturity = int(input('What is the duration for your savings account in months?'))
     # Call the create_savings_account function and pass the variables from the user.
     updated_savings_balance, interest_earned = create_savings_account(savings_balance, savings_interest, savings_maturity)
+    print(f'yyyy{updated_savings_balance} AND {interest_earned}')
 
     # Print out the interest earned and updated savings account balance with interest earned for the given months.
     # ADD YOUR CODE HERE
-    print(f'The interest earned for the duration of {savings_maturity} months on the savings account is: {interest_earned}.')
-    print(f'The updated savings account balance including the interest earned is : {updated_savings_balance}.')
+    print(f'The interest earned for the duration of {savings_maturity} months on the savings account is: {interest_earned :,.2f}.')
+    print(f'The updated savings account balance including the interest earned is : {updated_savings_balance :,.2f}.')
     # Prompt the user to set the CD balance, interest rate, and months for the CD account.
     # ADD YOUR CODE HERE
     cd_balance = float(input('What is your CD account balance? '))
@@ -27,11 +28,12 @@ def main():
     cd_maturity = int(input('What is the duration for your CD account in months?'))
     # Call the create_cd_account function and pass the variables from the user.
     updated_cd_balance, CD_interest_earned = create_cd_account(cd_balance, cd_interest, cd_maturity)
+    print(f'xxxx{CD_interest_earned}')
 
     # Print out the interest earned and updated CD account balance with interest earned for the given months.
     # ADD YOUR CODE HERE
-    print(f'The interest earned for the duration of {cd_maturity} months on the CD account is: {CD_interest_earned}.')
-    print(f'The updated CD account balance including the interest earned is : {updated_cd_balance}.')
+    print(f'The interest earned for the duration of {cd_maturity} months on the CD account is: {CD_interest_earned :,.2f}.')
+    print(f'The updated CD account balance including the interest earned is : {updated_cd_balance :,.2f}.')
 if __name__ == "__main__":
     # Call the main function.
     main()
