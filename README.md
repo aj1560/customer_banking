@@ -17,5 +17,6 @@ This is a customer banking application, where the user inputs three values "Curr
     - This file runs the program by requesting user input for "Current Balance", "Interest Rate" and "Duration in Months" for the Savings and CD accounts.
     - Based on the user input, the interest earned and the updated balance is printed.
 
-#### Sample application view
+#### Sample output
 
+![The sample output !](/images/image.png "Code execution")
